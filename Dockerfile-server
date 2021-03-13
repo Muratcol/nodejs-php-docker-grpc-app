@@ -1,0 +1,9 @@
+FROM node:latest
+
+# Moving app folder to vm
+WORKDIR /var/www
+COPY ./server /var/www
+
+RUN npm install
+
+CMD ["npm", "start"]

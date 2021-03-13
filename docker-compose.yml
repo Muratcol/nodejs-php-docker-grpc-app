@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  grpc-server:
+    image: grpc-server
+    container_name: grpc-server
+    build:
+      context: .
+      dockerfile: Dockerfile-server
+
+  grpc-client:
+    image: grpc-client
+    container_name: grpc-client
+    build:
+      context: .
+      dockerfile: Dockerfile-client
+    working_dir: /var/www

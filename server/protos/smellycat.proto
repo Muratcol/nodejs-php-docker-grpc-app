@@ -1,0 +1,26 @@
+
+syntax = "proto3";
+
+package smellycat;
+
+// Say meow
+service Meow {
+  // Packages
+  rpc SayMeow (Request) returns (CatSaid) {};
+  rpc DoMath (MathRequest) returns (CatSaid) {};
+}
+
+
+message Request {
+}
+
+
+message MathRequest {
+  int32 number1 = 1;
+  int32 number2 = 2;
+}
+
+
+message CatSaid {
+  string message = 1;
+}
