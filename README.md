@@ -1,4 +1,4 @@
-# Currency API
+# gRPC NodeJs-PHP Application
 
 This project has been made for educational purposes.
 
