@@ -2,14 +2,14 @@ version: "3"
 
 services:
   grpc-server:
-    image: grpc-server
+    image: muratcolyaran1/nodejs-grpc-server:1.0
     container_name: grpc-server
     build:
       context: .
       dockerfile: Dockerfile-server
 
   grpc-client:
-    image: grpc-client
+    image: muratcolyaran1/php-grpc-client:1.0
     container_name: grpc-client
     build:
       context: .
