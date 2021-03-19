@@ -3,7 +3,7 @@
 require_once realpath("vendor/autoload.php");
 
 echo "*** Testing PHP Client ***";
-
+sleep(5);
 
 $cat = new Smellycat\MeowClient(
     // we use docker network to connect server so localhost => imagename
@@ -18,7 +18,7 @@ $req2 = new Smellycat\MathRequest();
 $req2->setNumber1(10);
 $req2->setNumber2(5);
 
-sleep(5);
+
 list($res1, $status1) = $cat->SayMeow($req)->wait();
 list($res2, $status2) = $cat->DoMath($req2)->wait();
 

@@ -41,6 +41,5 @@ COPY ./client /var/www
 RUN composer install
 
 # Generate php libraries from proto file
-RUN make proto
 
-CMD [ "php", "./handler.php" ]
+ENTRYPOINT  [ "php", "./handler.php" ]

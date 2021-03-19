@@ -1,6 +1,5 @@
 
 proto:
-	mkdir -p php_client/src && \
 	protoc -I=protos \
 	protos/smellycat.proto \
 	--php_out=php_client/src \
