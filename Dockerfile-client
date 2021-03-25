@@ -40,6 +40,5 @@ COPY ./client /var/www
 # Packages
 RUN composer install
 
-# Generate php libraries from proto file
-
-ENTRYPOINT  [ "php", "./handler.php" ]
+# Start the client app
+ENTRYPOINT  [ "make", "proto" ]

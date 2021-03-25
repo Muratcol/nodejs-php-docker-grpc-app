@@ -4,4 +4,5 @@ proto:
 	protos/smellycat.proto \
 	--php_out=php_client/src \
 	--grpc_out=php_client/src \
-	--plugin=protoc-gen-grpc=../../../grpc/cmake/build/grpc_php_plugin
+	--plugin=protoc-gen-grpc=../../../grpc/cmake/build/grpc_php_plugin && \
+	php ./handler.php

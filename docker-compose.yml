@@ -15,6 +15,5 @@ services:
       context: .
       dockerfile: Dockerfile-client
     working_dir: /var/www
-    command: ['make', 'proto']
     volumes: 
       - ./client/php_client/src:/var/www/php_client/src
