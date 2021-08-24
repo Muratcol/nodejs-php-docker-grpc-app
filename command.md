@@ -3,6 +3,8 @@
 
     docker-compose build
 
-- Run container: (attached mode add -d if you want to run deattached)
+- Build & run container:
 
-    docker-compose up
+    docker-compose up (Attached mode)
+
+    docker-compose up -d (Deattached mode)
